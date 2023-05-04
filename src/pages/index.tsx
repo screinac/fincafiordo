@@ -50,7 +50,7 @@ export default function Home() {
       {/* Deportes */}
       <div className="p-3">
         <h2 className="text-3xl mt-6 p-2 mb-10">DEPORTES</h2>
-        <div className="flex gap-5 mb-9">
+        <div className="flex gap-5 mb-9 w-screen">
           <img src={Logo.src} alt="" className="w-full" />
           <img src={Logo.src} alt="" className="w-full" />
           <img src={Logo.src} alt="" className="w-full" />
