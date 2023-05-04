@@ -58,7 +58,7 @@ export default function Home() {
         <img src={Logo.src} alt="" className="w-1/3 mx-auto" />
         <div className="flex justify-center">
           <h3 className="mt-4 text-center text-2xl border-b-[#e0d8bc] border-b inline-block pb-2">
-            "Un lugar mágico"
+            `&quot;`Un lugar mágico`&quot;`
           </h3>
         </div>
       </div>
