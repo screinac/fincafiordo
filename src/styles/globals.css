@@ -23,6 +23,10 @@
 font-weight: 700;
 font-style: normal; */
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   color: #e0d8bc;
   background: #19231c;

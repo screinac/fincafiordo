@@ -2,9 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { motion, useAnimate } from "framer-motion";
 
-import img1 from "../../public/images/IMG_1346.jpg";
-import img2 from "../../public/images/IMG_1386.jpg";
-import img3 from "../../public/images/IMG_1390.jpg";
+import img1 from "../../public/images/slider_1/1.jpeg";
+import img2 from "../../public/images/slider_1/2.jpeg";
+import img3 from "../../public/images/slider_1/3.jpeg";
+import img4 from "../../public/images/slider_1/4.jpeg";
+import img5 from "../../public/images/slider_1/5.jpeg";
+import img6 from "../../public/images/slider_1/6.jpeg";
+import img7 from "../../public/images/slider_1/7.jpeg";
 
 const Slider = () => {
   const targetRef = useRef();
@@ -13,7 +17,7 @@ const Slider = () => {
 
   const [scope, animate] = useAnimate();
 
-  const images = [img1, img2, img3];
+  const images = [img1, img2, img3, img4, img5, img6, img7];
 
   let color;
 
@@ -60,7 +64,7 @@ const Slider = () => {
                   key={image.src}
                   src={image.src}
                   alt=""
-                  className="w-screen object-cover"
+                  className="w-screen object-cover object-bottom"
                 />
               );
             })}

@@ -9,6 +9,7 @@ import MotocrossImg from "../../public/images/motocross.png";
 import PajaroImg from "../../public/images/pajaro.png";
 import PezImg from "../../public/images/pez.png";
 import SenderismoImg from "../../public/images/senderismo.png";
+import { MdOutlineStarPurple500 } from "react-icons/md";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,6 @@ export default function Home() {
       <nav>
         <ul className="flex p-3 mb-3 w-full text-xl gap-4 justify-end">
           <li>Cabañas</li>
-          <li>Precios</li>
           <li>Contacto</li>
           <li>Home</li>
         </ul>
@@ -42,7 +42,7 @@ export default function Home() {
       </div>
 
       {/* Cabañas */}
-      <h2 className="text-3xl mt-6 p-2 mb-10">CABAÑAS</h2>
+      <h2 className="text-3xl mt-6 p-2 mb-10 ml-4">CABAÑAS</h2>
       <Slider></Slider>
 
       {/* La finca */}
@@ -50,17 +50,18 @@ export default function Home() {
         <h2 className="text-3xl mt-6 p-2 mb-10">LA FINCA</h2>
         <img src={ImagenPrincipal.src} alt="" />
         <p className="my-6">
-          Disfruta de la tranquilidad de la naturaleza Lorem, ipsum dolor sit
-          amet consectetur adipisicing elit. Veniam ratione corrupti minima
-          alias placeat. Nisi quae molestias rem laudantium similique?
+          Disfruta de la tranquilidad de la naturaleza en una de nuestras
+          cabañas, vive la experiencia del campo con comodidades modernas. Ideal
+          para desconectar y disfrutar de actividades al aire libre en un
+          entorno acogedor y relajante.
         </p>
         <img src={ImagenPrincipal.src} alt="" />
       </div>
 
       {/* Deportes */}
-      <div className="p-3">
+      <div className="p-3 ">
         <h2 className="text-3xl mt-6 p-2 mb-10">DEPORTES</h2>
-        <div className="grid grid-cols-3 gap-3 mb-9">
+        <div className="grid grid-cols-3 gap-5 mb-9">
           <img src={SenderismoImg.src} alt="" />
           <img src={MotocrossImg.src} alt="" />
           <img src={CorrerImg.src} alt="" />
@@ -70,6 +71,15 @@ export default function Home() {
           <h3 className="mt-4 text-center text-2xl border-b-[#e0d8bc] border-b inline-block pb-2">
             &quot;Un lugar mágico&quot;
           </h3>
+        </div>
+        <div>
+          <div className="flex mx-auto my-4 justify-center text-2xl hover:drop-shadow-[0_1px_1px_#e0d8bc]">
+            <MdOutlineStarPurple500 />
+            <MdOutlineStarPurple500 />
+            <MdOutlineStarPurple500 />
+            <MdOutlineStarPurple500 />
+            <MdOutlineStarPurple500 />
+          </div>
         </div>
       </div>
 
