@@ -66,7 +66,7 @@ export default function Home() {
         </div>
         <img src={LaRegionImg.src} alt="" className="w-2/3 object-cover" />
       </div>
-      <p className="mt-10 mb-6 px-6 ">
+      <p className="mt-10 mb-6 px-5">
         La región de Ubaté, reconocida por su gente laboriosa y servicial, se
         encuentra en el Departamento de Cundinamarca a 2 horas de la capital de
         la República de Colombia: Bogotá. El paisaje andino acaparado por
@@ -74,7 +74,7 @@ export default function Home() {
         lado de la gastronomía típica colombiana, tendencias modernas vienen
         acompañando los turistas.
       </p>
-      <p className="mt-6 mb-4 px-6 ">
+      <p className="mt-6 mb-4 px-5">
         En la región de Ubaté además de disfrutar maravillosos paisajes, podrás
         realizar cabalgatas, deportes acuáticos en el embalse el Hato y un sin
         número de actividades para todos los gustos.
@@ -84,11 +84,20 @@ export default function Home() {
       <div className="p-3">
         <h2 className="text-3xl mt-6 p-2 mb-10 md:text-4xl">LA FINCA</h2>
         <img src={FotoLogoCentrofrom.src} alt="" />
-        <p className="my-8 px-4">
+        <p className="mt-8 mb-4 px-3">
           Disfruta de la tranquilidad de la naturaleza en una de nuestras
           cabañas, vive la experiencia del campo con comodidades modernas. Ideal
           para desconectar y disfrutar de actividades al aire libre en un
           entorno acogedor y relajante.
+        </p>
+        <p className="mb-8 px-3">
+          Un espacio de tranquilidad y conexión con la naturaleza. Más de 40.000
+          mil metros cuadrados para recargar el aire puro de sus montañas
+          majestuosas. Senderos, flora y fauna silvestre y mucho silencio
+          reparador. A 800 metros encontrarás “el santuario”, bello lugar para
+          tu espiritualidad. A 6 kilómetros encontrarás el Embalse el Hato,
+          bellísimo lago para tus actividades acuáticas. Estamos sólo a 1 hora y
+          50 minutos de Bogotá.
         </p>
         <Slider1></Slider1>
       </div>
