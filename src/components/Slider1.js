@@ -2,22 +2,20 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { motion, useAnimate } from "framer-motion";
 
-import img1 from "../../public/images/slider_1/1.jpeg";
-import img2 from "../../public/images/slider_1/2.jpeg";
-import img3 from "../../public/images/slider_1/3.jpeg";
-import img4 from "../../public/images/slider_1/4.jpeg";
-import img5 from "../../public/images/slider_1/5.jpeg";
-import img6 from "../../public/images/slider_1/6.jpeg";
-import img7 from "../../public/images/slider_1/7.jpeg";
+import img1 from "../../public/images/slider_2/1.jpeg";
+import img2 from "../../public/images/slider_2/2.jpeg";
+import img3 from "../../public/images/slider_2/3.jpeg";
+import img4 from "../../public/images/slider_2/4.jpeg";
+import img5 from "../../public/images/slider_2/5.jpeg";
 
-const Slider = () => {
+const Slider1 = () => {
   const targetRef = useRef();
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const [index, setIndex] = useState(0);
 
   const [scope, animate] = useAnimate();
 
-  const images = [img1, img2, img3, img4, img5, img6, img7];
+  const images = [img1, img2, img3, img4, img5];
 
   let color;
 
@@ -48,30 +46,27 @@ const Slider = () => {
     <div>
       <div className="flex relative">
         <button
-          className="absolute h-80 w-40 z-10 md:w-60"
+          className="absolute h-80 w-40 z-10"
           onClick={handlePrev}
         ></button>
         <button
-          className="absolute h-80 w-40 z-10 right-0 md:w-60"
+          className="absolute h-80 w-40 z-10 right-0"
           onClick={handleNext}
         ></button>
-        <div className="h-40 w-1 mx-3 my-auto bg-[#e0d8bc]"></div>
-        <div className="w-full h-80 overflow-hidden relative md:w-full">
+        <div className="w-full h-80 overflow-hidden relative" ref={targetRef}>
           <div className="absolute w-full flex" ref={scope}>
-            {images.map((image, index) => {
+            {images.map((image) => {
               return (
                 <img
                   key={image.src}
                   src={image.src}
-                  ref={index === 0 ? targetRef : null}
                   alt=""
-                  className="w-screen object-cover object-bottom md:w-96"
+                  className="w-screen object-cover object-bottom"
                 />
               );
             })}
           </div>
         </div>
-        <div className="h-40 w-1 mx-3 my-auto bg-[#e0d8bc]"></div>
       </div>
       <div className="flex gap-6 justify-center mt-5">
         {images.map((bullet, bulletIndex) => {
@@ -97,4 +92,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default Slider1;
