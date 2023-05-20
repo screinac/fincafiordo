@@ -152,13 +152,13 @@ export default function Home() {
       <div className="p-3 lg:hidden">
         <h2 className="text-3xl mt-6 p-2 mb-10 md:text-4xl">LA FINCA</h2>
         <img src={FotoLogoCentrofrom.src} alt="" />
-        <p className="mt-8 mb-4 px-3">
+        <p className="mt-8 mb-4 px-3 text-sm">
           Disfruta de la tranquilidad de la naturaleza en una de nuestras
           cabañas, vive la experiencia del campo con comodidades modernas. Ideal
           para desconectar y disfrutar de actividades al aire libre en un
           entorno acogedor y relajante.
         </p>
-        <p className="mb-8 px-3">
+        <p className="mb-8 px-3 text-sm">
           Un espacio de tranquilidad y conexión con la naturaleza. Más de 40.000
           mil metros cuadrados para recargar el aire puro de sus montañas
           majestuosas. Senderos, flora y fauna silvestre y mucho silencio
