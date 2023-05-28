@@ -92,24 +92,24 @@ export default function Home() {
       <h2 className="text-3xl mt-10 p-2 mb-10 pr-7 text-right md:text-4xl lg:mr-10 lg:mt-16">
         LA REGIÓN
       </h2>
-      <div className="flex gap-8 lg:hidden">
-        <div className="w-1/3 pl-8 pr-2 text-center md:my-auto ">
+      <div className="flex gap-8 lg:hidden ">
+        <div className="w-1/3 pl-3 text-center md:my-auto ">
           <img
             src={PajaroImg.src}
             alt=""
-            className="w-24 mx-auto mb-2 md:w-40 md:mb-3"
+            className="w-16 mx-auto mb-2 md:w-40 md:mb-3"
           />
-          <p className="mb-5 md:mb-10">Avistamiento de aves</p>
+          <p className="mb-5 md:mb-10 ">Avistamiento de aves</p>
           <img
             src={PezImg.src}
             alt=""
-            className="w-24 mx-auto mb-2 md:w-40 md:mb-3"
+            className="w-16 mx-auto mb-2 md:w-40 md:mb-3"
           />
           <p className="mb-5 md:mb-10">Pesca</p>
           <img
             src={EcoturismoImg.src}
             alt=""
-            className="w-24 mx-auto mb-2 md:w-40"
+            className="w-16 mx-auto mb-2 md:w-40"
           />
           <p className="mb-5 md:mb-10">Ecoturismo</p>
         </div>
@@ -204,21 +204,21 @@ export default function Home() {
           DEPORTES
         </h2>
         <div className="flex justify-between">
-          <div className="grid grid-cols-3 gap-5 mb-9 md:gap-14 md:mb-20 md:mx-20 lg:m-0 lg:mx-auto lg:grid-cols-1 lg:w-2/3 lg:my-auto lg:gap-36">
+          <div className="mx-auto grid grid-cols-3 gap-5 mb-9 md:gap-14 md:mb-20 md:mx-20 lg:m-0 lg:mx-auto lg:grid-cols-1 lg:w-2/3 lg:my-auto lg:gap-36">
             <img
               src={SenderismoImg.src}
               alt=""
-              className="rounded-full lg:mx-auto lg:w-40"
+              className="rounded-full w-20 lg:mx-auto lg:w-40"
             />
             <img
               src={MotocrossImg.src}
               alt=""
-              className="rounded-full lg:mx-auto lg:w-40"
+              className="rounded-full w-20 lg:mx-auto lg:w-40"
             />
             <img
               src={CorrerImg.src}
               alt=""
-              className="rounded-full lg:mx-auto lg:w-40"
+              className="rounded-full w-20 lg:mx-auto lg:w-40"
             />
           </div>
           <div className="hidden lg:block w-2/3">
