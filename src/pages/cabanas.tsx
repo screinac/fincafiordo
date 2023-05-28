@@ -25,6 +25,7 @@ import pedregal_img12 from "../../public/images/slider_pedregal/12.jpeg";
 
 import LogoVerde from "../../public/images/logo-verde.png";
 import Link from "next/link";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
 export default function Cabanas() {
   const images_balcones = [
@@ -59,21 +60,24 @@ export default function Cabanas() {
         alt=""
         className="object-cover absolute z-0"
       />
-      <nav>
-        <ul className="flex p-3 mb-3 w-full text-xl gap-4 justify-end pt-6 md:gap-9 md:text-2xl md:pr-10 lg:text-xl drop-shadow-md">
+      <nav className="drop-shadow-md">
+        <ul className="flex p-3 mb-3 w-full text-xl gap-4 justify-end pt-6 md:gap-9 md:text-2xl md:pr-10 lg:text-xl">
           <li>
-            <Link href="/cabanas">Cabañas</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link
-              href="https://api.whatsapp.com/send/?phone=573136169215&text&type=phone_number&app_absent=0"
-              target="_blank"
-            >
-              Contacto
+            <Link href="/cabanas" className="border-b-2 border-[#e0d8bc]">
+              Cabañas
             </Link>
           </li>
           <li>
-            <Link href="/">Home</Link>
+            <Link
+              href="https://api.whatsapp.com/send?phone=573203714336&text=Hola%20Finca%20El%20Fiordo"
+              target="_blank"
+            >
+              <AiOutlineWhatsApp className="inline-block my-auto mr-1 mb-1" />
+              Contacto
+            </Link>
           </li>
         </ul>
       </nav>
@@ -99,13 +103,16 @@ export default function Cabanas() {
           <li>Parqueadero Exclusivo</li>
           <li className="border-b-2 mt-6">
             <Link
-              href="https://api.whatsapp.com/send/?phone=573136169215&text&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send?phone=573203714336&text=Hola%20Finca%20El%20Fiordo"
               target="_blank"
             >
               Reserva
             </Link>
           </li>
         </ul>
+        <div>
+          <img src="" alt="" />
+        </div>
       </div>
 
       <h2 className="z-10 text-3xl mt-2 p-2 mr-4 mb-10 md:text-4xl text-right drop-shadow-md">
@@ -128,7 +135,7 @@ export default function Cabanas() {
           <li>Parqueadero Exclusivo</li>
           <li className="border-b-2 mt-6">
             <Link
-              href="https://api.whatsapp.com/send/?phone=573136169215&text&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send?phone=573203714336&text=Hola%20Finca%20El%20Fiordo"
               target="_blank"
             >
               Reserva

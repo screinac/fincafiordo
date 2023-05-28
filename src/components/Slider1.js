@@ -46,14 +46,17 @@ const Slider1 = () => {
     <div>
       <div className="flex relative">
         <button
-          className="absolute h-80 w-40 z-10"
+          className="absolute h-[520px] w-40 z-10"
           onClick={handlePrev}
         ></button>
         <button
-          className="absolute h-80 w-40 z-10 right-0"
+          className="absolute h-[520px] w-40 z-10 right-0"
           onClick={handleNext}
         ></button>
-        <div className="w-full h-80 overflow-hidden relative" ref={targetRef}>
+        <div
+          className="w-full h-[520px] overflow-hidden relative"
+          ref={targetRef}
+        >
           <div className="absolute w-full flex" ref={scope}>
             {images.map((image) => {
               return (

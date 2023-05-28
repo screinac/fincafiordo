@@ -38,15 +38,15 @@ const Slider = ({ images }) => {
     <div>
       <div className="flex relative">
         <button
-          className="absolute h-80 w-40 z-50 md:w-60 lg:h-96 lg:w-64"
+          className="absolute h-[480px] w-40 z-50 md:w-60 lg:h-[650px] lg:w-64"
           onClick={handlePrev}
         ></button>
         <button
-          className="absolute h-80 w-40 z-50 right-0 md:w-60 lg:h-96 lg:w-64"
+          className="absolute h-[480px] w-40 z-50 right-0 md:w-60 lg:h-[650px] lg:w-64"
           onClick={handleNext}
         ></button>
         <div className="h-40 w-1 mx-3 my-auto bg-[#e0d8bc] "></div>
-        <div className="w-full h-80 overflow-hidden relative md:w-full lg:h-96">
+        <div className="w-full h-[480px] overflow-hidden relative md:w-full lg:h-[650px]">
           <div className="absolute w-full flex " ref={scope}>
             {images.map((image, index) => {
               return (
@@ -55,7 +55,7 @@ const Slider = ({ images }) => {
                   src={image.src}
                   ref={index === 0 ? targetRef : null}
                   alt=""
-                  className="w-screen object-center md:w-96 lg:w-[600px]"
+                  className="w-screen object-cover md:w-96 lg:w-[600px]"
                 />
               );
             })}

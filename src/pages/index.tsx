@@ -24,6 +24,7 @@ import img5 from "../../public/images/slider_1/5.jpeg";
 import img6 from "../../public/images/slider_1/6.jpeg";
 import img7 from "../../public/images/slider_1/7.jpeg";
 
+import { AiOutlineWhatsApp } from "react-icons/ai";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import Link from "next/link";
 
@@ -35,18 +36,21 @@ export default function Home() {
       <nav>
         <ul className="flex p-3 mb-3 w-full text-xl gap-4 justify-end pt-6 md:gap-9 md:text-2xl md:pr-10 lg:text-xl">
           <li>
+            <Link href="/" className="border-b-2 border-[#e0d8bc]">
+              Home
+            </Link>
+          </li>
+          <li>
             <Link href="/cabanas">Cabañas</Link>
           </li>
           <li>
             <Link
-              href="https://api.whatsapp.com/send/?phone=573136169215&text&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send?phone=573203714336&text=Hola%20Finca%20El%20Fiordo"
               target="_blank"
             >
+              <AiOutlineWhatsApp className="inline-block my-auto mr-1 mb-1" />
               Contacto
             </Link>
-          </li>
-          <li>
-            <Link href="/">Home</Link>
           </li>
         </ul>
       </nav>
@@ -89,7 +93,7 @@ export default function Home() {
         LA REGIÓN
       </h2>
       <div className="flex gap-8 lg:hidden">
-        <div className="w-1/3 pl-3 text-center md:my-auto ">
+        <div className="w-1/3 pl-8 pr-2 text-center md:my-auto ">
           <img
             src={PajaroImg.src}
             alt=""
@@ -229,7 +233,7 @@ export default function Home() {
               &quot;Un lugar mágico&quot;
             </h3>
           </div>
-          <div>
+          <div className="flex flex-col">
             <div className="flex mx-auto my-4 justify-center text-2xl hover:drop-shadow-[0_1px_1px_#e0d8bc] lg:text-3xl">
               <MdOutlineStarPurple500 />
               <MdOutlineStarPurple500 />
@@ -237,6 +241,12 @@ export default function Home() {
               <MdOutlineStarPurple500 />
               <MdOutlineStarPurple500 />
             </div>
+            <Link
+              href="/cabanas"
+              className="mx-auto border-b-2 border-[#e0d8bc]"
+            >
+              Conoce las Cabañas
+            </Link>
           </div>
         </div>
       </div>
@@ -260,7 +270,7 @@ export default function Home() {
               &quot;Un lugar mágico&quot;
             </h3>
           </div>
-          <div>
+          <div className="flex flex-col">
             <div className="flex mx-auto my-4 justify-center text-2xl hover:drop-shadow-[0_1px_1px_#e0d8bc] lg:text-3xl">
               <MdOutlineStarPurple500 />
               <MdOutlineStarPurple500 />
@@ -268,6 +278,12 @@ export default function Home() {
               <MdOutlineStarPurple500 />
               <MdOutlineStarPurple500 />
             </div>
+            <Link
+              href="/cabanas"
+              className="mx-auto  border-b-2 border-[#e0d8bc]"
+            >
+              Conoce las Cabañas
+            </Link>
           </div>
         </div>
       </div>
