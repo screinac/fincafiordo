@@ -92,8 +92,8 @@ export default function Home() {
       <h2 className="text-3xl mt-10 p-2 mb-10 pr-7 text-right md:text-4xl lg:mr-10 lg:mt-16">
         LA REGIÓN
       </h2>
-      <div className="flex gap-8 lg:hidden ">
-        <div className="w-1/3 pl-3 text-center md:my-auto ">
+      <div className="flex lg:hidden ">
+        <div className="mx-auto text-center md:my-auto ">
           <img
             src={PajaroImg.src}
             alt=""
