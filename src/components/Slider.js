@@ -2,22 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { motion, useAnimate } from "framer-motion";
 
-import img1 from "../../public/images/slider_1/1.jpeg";
-import img2 from "../../public/images/slider_1/2.jpeg";
-import img3 from "../../public/images/slider_1/3.jpeg";
-import img4 from "../../public/images/slider_1/4.jpeg";
-import img5 from "../../public/images/slider_1/5.jpeg";
-import img6 from "../../public/images/slider_1/6.jpeg";
-import img7 from "../../public/images/slider_1/7.jpeg";
-
-const Slider = () => {
+const Slider = ({ images }) => {
   const targetRef = useRef();
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const [index, setIndex] = useState(0);
 
   const [scope, animate] = useAnimate();
-
-  const images = [img1, img2, img3, img4, img5, img6, img7];
 
   let color;
 
@@ -48,11 +38,11 @@ const Slider = () => {
     <div>
       <div className="flex relative">
         <button
-          className="absolute h-80 w-40 z-10 md:w-60 lg:h-96 lg:w-64"
+          className="absolute h-80 w-40 z-50 md:w-60 lg:h-96 lg:w-64"
           onClick={handlePrev}
         ></button>
         <button
-          className="absolute h-80 w-40 z-10 right-0 md:w-60 lg:h-96 lg:w-64"
+          className="absolute h-80 w-40 z-50 right-0 md:w-60 lg:h-96 lg:w-64"
           onClick={handleNext}
         ></button>
         <div className="h-40 w-1 mx-3 my-auto bg-[#e0d8bc] "></div>
