@@ -1,4 +1,6 @@
 import BackgroundCuero from "../../public/images/cabanas/fondo-cuero.png";
+import cafe_img from "../../public/images/cabanas/cafe.jpeg";
+import finca_img from "../../public/images/cabanas/finca.jpeg";
 import Slider from "../components/Slider";
 
 import balcones_img1 from "../../public/images/slider_balcones/1.jpeg";
@@ -81,13 +83,13 @@ export default function Cabanas() {
           </li>
         </ul>
       </nav>
-      <h2 className="z-10 text-3xl mt-2 p-2 mr-4 mb-10 md:text-4xl text-right drop-shadow-md">
+      <h2 className="z-10 text-3xl mt-2 p-2 mr-4 mb-16 md:text-4xl text-right drop-shadow-md lg:text-6xl lg:mt-20">
         PEDREGAL
       </h2>
       <Slider images={images_pedregal}></Slider>
 
-      <div className="mt-3 drop-shadow-md">
-        <ul className="p-6">
+      <div className="mt-3 drop-shadow-md lg:flex lg:my-16">
+        <ul className="p-6 lg:w-1/2 lg:mx-auto lg:text-xl">
           <li>10 Personas</li>
           <li>4 Habitaciones</li>
           <li>3 Baños</li>
@@ -101,7 +103,7 @@ export default function Cabanas() {
           <li>Zona de estudio y trabajo</li>
           <li>Wifi</li>
           <li>Parqueadero Exclusivo</li>
-          <li className="border-b-2 mt-6">
+          <li className="border-b-2 mt-6 lg:mt-20">
             <Link
               href="https://api.whatsapp.com/send?phone=573203714336&text=Hola%20Finca%20El%20Fiordo"
               target="_blank"
@@ -110,17 +112,20 @@ export default function Cabanas() {
             </Link>
           </li>
         </ul>
-        <div>
-          <img src="" alt="" />
+        <div className="w-1/3 mx-auto hidden lg:block">
+          <img src={cafe_img.src} alt="" />
         </div>
       </div>
 
-      <h2 className="z-10 text-3xl mt-2 p-2 mr-4 mb-10 md:text-4xl text-right drop-shadow-md">
+      <h2 className="z-10 text-3xl mt-2 p-2 mr-4 mb-16 md:text-4xl text-right drop-shadow-md lg:text-6xl lg:mt-24">
         BALCONES
       </h2>
       <Slider images={images_balcones}></Slider>
-      <div className="mt-3">
-        <ul className="p-6">
+      <div className="mt-3 drop-shadow-md lg:flex lg:my-16">
+        <div className="w-1/3 mx-auto hidden lg:block ">
+          <img src={finca_img.src} alt="" className="object-cover h-[700px]" />
+        </div>
+        <ul className="p-6 lg:w-1/2 lg:mx-auto lg:text-xl">
           <li>7 Personas</li>
           <li>1 Habitación</li>
           <li>3 Camas</li>
@@ -133,7 +138,7 @@ export default function Cabanas() {
           <li>Zona de estudio y trabajo</li>
           <li>Wifi</li>
           <li>Parqueadero Exclusivo</li>
-          <li className="border-b-2 mt-6">
+          <li className="border-b-2 mt-6 lg:mt-20">
             <Link
               href="https://api.whatsapp.com/send?phone=573203714336&text=Hola%20Finca%20El%20Fiordo"
               target="_blank"
@@ -148,7 +153,7 @@ export default function Cabanas() {
         <img
           src={LogoVerde.src}
           alt=""
-          className="w-1/2 py-6 mx-auto lg:hidden"
+          className="w-1/2 py-6 mx-auto  max-w-[300px] lg:my-11"
         />
         <Link
           href="https://www.plupweb.com"

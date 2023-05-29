@@ -87,6 +87,12 @@ export default function Home() {
         CABAÑAS
       </h2>
       <Slider images={images}></Slider>
+      <Link
+        href="/cabanas"
+        className="border-b-[#e0d8bc] border-b pb-2 block mt-7 w-[170px] mx-auto lg:text-xl lg:w-[210px]"
+      >
+        Conoce nuestras cabañas
+      </Link>
 
       {/* La Región */}
       <h2 className="text-3xl mt-10 p-2 mb-10 pr-7 text-right md:text-4xl lg:mr-10 lg:mt-16">
